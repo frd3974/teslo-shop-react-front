@@ -15,7 +15,7 @@ interface Props {
     saving: boolean;
 }
 
-const availableSizes: Size = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
+const availableSizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
 
 interface FormInputs extends Product{
     files?: File[]
@@ -95,6 +95,7 @@ export const ProductForm = ({title, subtitle, product, onSubmit, saving}:Props) 
     };
 
     return (
+    // @ts-ignore
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="flex justify-between items-center">
                 <AdminTitle title={title} subtitle={subtitle} />

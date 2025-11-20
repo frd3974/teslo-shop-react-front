@@ -10,7 +10,7 @@ interface ProductCardProps {
     sizes: string[];
 }
 
-export const ProductCard = ({ id, name, price, image, category, sizes }: ProductCardProps) => {
+export const ProductCard = ({ name, price, image, category, sizes }: ProductCardProps) => {
     // console.log({ id, name, price, image, category })
     return (
         <Card className="group border-0 shadow-none product-card-hover cursor-pointer">
